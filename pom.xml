@@ -15,9 +15,17 @@
 	</description>
     <url>http://site.trajano.net/${project.artifactId}/</url>
     <modules>
+        <module>app</module>
         <module>batik-maven-plugin</module>
+        <module>cleanpom-maven-plugin</module>
         <module>coding-standards</module>
+        <module>commons-testing</module>
+        <module>java-archetype</module>
+        <module>jaxws-maven-plugin</module>
+        <module>m2e-codestyle-maven-plugin</module>
         <module>trajano</module>
+        <module>trajano-logo</module>
+        <module>twentyfourteen-maven-skin</module>
     </modules>
     <scm>
         <connection>scm:git:https://github.com/trajano/${project.artifactId}</connection>
@@ -33,6 +41,7 @@
         </site>
     </distributionManagement>
     <build>
+        <defaultGoal>clean install site</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -43,7 +52,7 @@
                         <id>enforce</id>
                         <configuration>
                             <rules>
-                                <DependencyConvergence/>
+                                <requireUpperBoundDeps/>
                             </rules>
                         </configuration>
                         <goals>
