@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>net.trajano</groupId>
+        <artifactId>trajano</artifactId>
+        <version>9-SNAPSHOT</version>
+    </parent>
+    <groupId>net.trajano</groupId>
+    <artifactId>oss-aggregate</artifactId>
+    <packaging>pom</packaging>
+    <name>OSS Aggregate</name>
+    <description>
+	This project aggregates open source projects of the organization.
+	</description>
+    <url>http://site.trajano.net/${project.artifactId}/</url>
+    <modules>
+        <module>batik-maven-plugin</module>
+        <module>coding-standards</module>
+        <module>trajano</module>
+    </modules>
+    <scm>
+        <connection>scm:git:https://github.com/trajano/${project.artifactId}</connection>
+        <developerConnection>scm:git:ssh://git@github.com/trajano/${project.artifactId}.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/trajano/${project.artifactId}</url>
+    </scm>
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>Trajano Github Pages</name>
+            <url>git:ssh://git@github.com/trajano/${project.artifactId}.git?gh-pages#</url>
+        </site>
+    </distributionManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.3.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce</id>
+                        <configuration>
+                            <rules>
+                                <DependencyConvergence/>
+                            </rules>
+                        </configuration>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
