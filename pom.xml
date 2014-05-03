@@ -23,6 +23,7 @@
         <module>java-archetype</module>
         <module>jaxws-maven-plugin</module>
         <module>m2e-codestyle-maven-plugin</module>
+        <module>maven-doxia-tools</module>
         <module>trajano</module>
         <module>trajano-logo</module>
         <module>twentyfourteen-maven-skin</module>
@@ -37,7 +38,7 @@
         <site>
             <id>gh-pages</id>
             <name>Trajano Github Pages</name>
-            <url>git:ssh://git@github.com/trajano/${project.artifactId}.git?gh-pages#</url>
+            <url>github:http://site.trajano.net/${project.artifactId}/</url>
         </site>
     </distributionManagement>
     <build>
