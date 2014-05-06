@@ -1,0 +1,39 @@
+[submodule "trajano"]
+	path = trajano
+	url = git@github.com:trajano/trajano.git
+[submodule "coding-standards"]
+	path = coding-standards
+	url = git@github.com:trajano/coding-standards.git
+[submodule "batik-maven-plugin"]
+	path = batik-maven-plugin
+	url = git@github.com:trajano/batik-maven-plugin.git
+[submodule "app"]
+	path = app
+	url = git@github.com:trajano/app.git
+[submodule "cleanpom-maven-plugin"]
+	path = cleanpom-maven-plugin
+	url = git@github.com:trajano/cleanpom-maven-plugin.git
+[submodule "commons-testing"]
+	path = commons-testing
+	url = git@github.com:trajano/commons-testing.git
+[submodule "java-archetype"]
+	path = java-archetype
+	url = git@github.com:trajano/java-archetype.git
+[submodule "jaxws-maven-plugin"]
+	path = jaxws-maven-plugin
+	url = git@github.com:trajano/jaxws-maven-plugin.git
+[submodule "m2e-codestyle-maven-plugin"]
+	path = m2e-codestyle-maven-plugin
+	url = git@github.com:trajano/m2e-codestyle-maven-plugin.git
+[submodule "trajano-logo"]
+	path = trajano-logo
+	url = git@github.com:trajano/trajano-logo.git
+[submodule "twentyfourteen-maven-skin"]
+	path = twentyfourteen-maven-skin
+	url = git@github.com:trajano/twentyfourteen-maven-skin.git
+[submodule "maven-doxia-tools"]
+	path = maven-doxia-tools
+	url = git@github.com:trajano/maven-doxia-tools.git
+[submodule "reverse-proxy-auth-sonar-plugin"]
+	path = reverse-proxy-auth-sonar-plugin
+	url = git@github.com:trajano/reverse-proxy-auth-sonar-plugin.git
