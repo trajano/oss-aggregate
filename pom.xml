@@ -6,7 +6,6 @@
         <artifactId>trajano</artifactId>
         <version>9-SNAPSHOT</version>
     </parent>
-    <groupId>net.trajano</groupId>
     <artifactId>oss-aggregate</artifactId>
     <packaging>pom</packaging>
     <name>OSS Aggregate</name>
@@ -24,6 +23,7 @@
         <module>jaxws-maven-plugin</module>
         <module>m2e-codestyle-maven-plugin</module>
         <module>maven-doxia-tools</module>
+        <module>reverse-proxy-auth-sonar-plugin</module>
         <module>trajano</module>
         <module>trajano-logo</module>
         <module>twentyfourteen-maven-skin</module>
