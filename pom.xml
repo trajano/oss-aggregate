@@ -27,6 +27,7 @@
         <module>trajano</module>
         <module>trajano-logo</module>
         <module>twentyfourteen-maven-skin</module>
+        <module>wagon-git</module>
     </modules>
     <scm>
         <connection>scm:git:https://github.com/trajano/${project.artifactId}</connection>

@@ -37,3 +37,6 @@
 [submodule "reverse-proxy-auth-sonar-plugin"]
 	path = reverse-proxy-auth-sonar-plugin
 	url = git@github.com:trajano/reverse-proxy-auth-sonar-plugin.git
+[submodule "wagon-git"]
+	path = wagon-git
+	url = git@github.com:trajano/wagon-git.git
